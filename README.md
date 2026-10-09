@@ -1,0 +1,12 @@
+# Potato_disease_predictor
+This AI-based project which takes image of sick potato and try to predict its disease
+
+# Sickness of Plants is one of most problem which cause financial loss to different farmers
+
+<p>This AI-Based project it will help you to take image of sick plant leaf with your phone and our app will generate the disease</p>
+<p>Right now it detect only two disease of potato (Early bright and late bright) we will add another diseases in next version</p>
+<p>We will use CNN model and fastAPI and react-native as frontend mobile App</p>
+<p>Model is Deployed to GCP</p>
+
+<h1>This project is build with love and coffee at desk by NIYOMUGABO Etiene & Code Explorer Rwanda Ltd</h1>
+<h1>Enjoy by using our intelligent App</h1>
