@@ -25,8 +25,8 @@ async def predict(
      file: UploadFile = File(...)
 ):
      image = read_file_as_image (await file.read())
-     np.expand_dims(image, axis=0) # add image to batches
-     MODEL.predict(image)
+     image_batch = np.expand_dims(image, axis=0) # add image to batches
+     MODEL.predict(image_batch)
      
 
 if __name__ == "__main__":
