@@ -1,6 +1,6 @@
 from fastapi import FastAPI, File, UploadFile, Response
 import uvicorn
-import PIL
+from PIL import Image
 from io import BytesIO
 import numpy as np
 
@@ -12,7 +12,8 @@ async def ping():
 
 def read_file_as_image(data) -> np.ndarray:
      image = BytesIO(data)
-     np.array(PIL.Image.open(image))
+     image = np.array(Image.open(image))
+     return image
 
 @app.post("/predict")
 async def predict(
@@ -20,6 +21,7 @@ async def predict(
      file: UploadFile = File(...)
 ):
      image = read_file_as_image (await file.read())
+     return image
      
 
 if __name__ == "__main__":
