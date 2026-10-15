@@ -11,8 +11,8 @@ async def ping():
     return "I'm working keep go on!!" # just to make sure our server is running
 
 def read_file_as_image(data) -> np.ndarray:
-     image = BytesIO(data)
-     image = np.array(Image.open(image))
+     image = Image.open(BytesIO(data))
+     image = np.array(image)
      return image
 
 @app.post("/predict")
