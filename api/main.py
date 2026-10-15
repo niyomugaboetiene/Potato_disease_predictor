@@ -13,6 +13,6 @@ async def predict(
     #  file in variablename, UploadFile is datatype, and File class is default value
      file: UploadFile = File(...)
 ):
-     pass
+     bytes = await file.read()
 if __name__ == "__main__":
       uvicorn.run(app, port=5000, host="localhost")
