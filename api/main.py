@@ -1,4 +1,4 @@
-from fastapi import FastAPI, File, UploadFile
+from fastapi import FastAPI, File, UploadFile, Response
 import uvicorn
 
 app = FastAPI()
@@ -14,5 +14,7 @@ async def predict(
      file: UploadFile = File(...)
 ):
      bytes = await file.read()
+     return Response(bytes)
+
 if __name__ == "__main__":
       uvicorn.run(app, port=5000, host="localhost")
