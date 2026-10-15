@@ -1,5 +1,8 @@
 from fastapi import FastAPI, File, UploadFile, Response
 import uvicorn
+import PIL
+from io import BytesIO
+import numpy as np
 
 app = FastAPI()
 
@@ -7,14 +10,17 @@ app = FastAPI()
 async def ping():
     return "I'm working keep go on!!" # just to make sure our server is running
 
+def read_file_as_image(data) -> np.ndarray:
+     image = BytesIO(data)
+     np.array(PIL.Image.open(image))
 
 @app.post("/predict")
 async def predict(
     #  file in variablename, UploadFile is datatype, and File class is default value
      file: UploadFile = File(...)
 ):
-     bytes = await file.read()
-     return Response(bytes)
+     image = read_file_as_image (await file.read())
+     
 
 if __name__ == "__main__":
       uvicorn.run(app, port=5000, host="localhost")
