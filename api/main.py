@@ -25,7 +25,7 @@ async def predict(
      file: UploadFile = File(...)
 ):
      image = read_file_as_image (await file.read())
-     return image.shape
+     MODEL.predict(image)
      
 
 if __name__ == "__main__":
