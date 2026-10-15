@@ -4,10 +4,14 @@ from PIL import Image
 from io import BytesIO
 import numpy as np
 import tensorflow as tf
+import os
 
 app = FastAPI()
 
-MODEL = tf.keras.models.load_model("../models/1.keras")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MODEL_PATH = os.path.join(BASE_DIR, "models", "1.keras")
+
+MODEL = tf.keras.models.load_model(MODEL_PATH)
 CLASS_NAMES = ["Earily Bright", "Late Bright", "Healthy"]  
 @app.get('/ping')
 async def ping():
