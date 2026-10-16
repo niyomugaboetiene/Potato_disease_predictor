@@ -31,7 +31,7 @@ async def predict(
      image_batch = np.expand_dims(image, axis=0) # add image to batches
      prediction = MODEL.predict(image_batch)
      predicted_class = CLASS_NAMES[np.argmax(prediction[0])]
-     confidence = np.max(prediction[0])
+     confidence = float(np.max(prediction[0]))
      return {
           "Class": predicted_class,
           "Confidence": confidence
