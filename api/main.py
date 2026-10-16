@@ -30,7 +30,8 @@ async def predict(
      image = read_file_as_image (await file.read())
      image_batch = np.expand_dims(image, axis=0) # add image to batches
      prediction = MODEL.predict(image_batch)
-     return prediction.tolist()
+     predicted_class = CLASS_NAME[]
+     # return prediction.tolist()
      
 
 if __name__ == "__main__":
