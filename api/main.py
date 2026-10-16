@@ -32,6 +32,10 @@ async def predict(
      prediction = MODEL.predict(image_batch)
      predicted_class = CLASS_NAMES[np.argmax(prediction[0])]
      confidence = np.max(prediction[0])
+     return {
+          "Class": predicted_class,
+          "Confidence": confidence
+     }
      # return prediction.tolist()
      
 
