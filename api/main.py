@@ -5,9 +5,19 @@ from io import BytesIO
 import numpy as np
 import tensorflow as tf
 import os
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
-
+app.add_middleware(
+     CORSMiddleware,
+     allow_origins=[
+          "http://localhost:5173",
+          "http://127.0.0.1:5173"
+     ],
+     allow_headers=["*"],
+     allow_methods=["*"],
+     allow_credentials=True
+)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODEL_PATH = os.path.join(BASE_DIR, "models", "1.keras")
 MODEL = tf.keras.models.load_model(MODEL_PATH)
@@ -18,7 +28,7 @@ async def ping():
 
 # read file from disk and convert it into np array
 def read_file_as_image(data) -> np.ndarray:
-     image = Image.open(BytesIO(data))
+     image = Image.open(BytesIO(data)).convert("RGB")
      image = np.array(image)
      return image
 
@@ -29,7 +39,7 @@ async def predict(
 ):
      image = read_file_as_image (await file.read())
      image_batch = np.expand_dims(image, axis=0) # add image to batches
-     prediction = MODEL.predict(image_batch)
+     prediction = MODEL.predict(image_batch, verbose=0)
      predicted_class = CLASS_NAMES[np.argmax(prediction[0])]
      confidence = float(np.max(prediction[0]))
      return {
