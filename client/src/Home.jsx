@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <div className="relative w-full min-h-screen bg-[#08080e] overflow-hidden">
 
-      <div className="relative z-10 w-full">
+      <div className="bg-[#0B1F2A] relative z-10 w-full p-3">
         <div className="flex justify-between items-center p-5 max-w-7xl mx-auto px-8">
         
                 <div className="flex items-center gap-3 group cursor-pointer">
