@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Image from "./assets/image.png"
 import { FaFire, FaLock, FaLink, FaDesktop } from "react-icons/fa";
 import logo from "./assets/logo.jpeg"
 
 export default function Header() {
+  const [ActiveLink, setActiveLink] = useState("/");
+
   return (
     <div className="relative w-full min-h-screen bg-[#08080e] overflow-hidden">
 
@@ -41,10 +43,10 @@ export default function Header() {
                 </div>
             <div>
                 <nav className="space-x-6 me-12 mt-2 flex items-center">
-                    <Link className="font-bold text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer">Home</Link>
-                    <Link className="font-bold text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer">Scanner</Link>
-                    <Link className="font-bold text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer">Diseases</Link>
-                    <Link className="font-bold text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer">About</Link>
+                    <Link className="text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer">Home</Link>
+                    <Link className="text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer">Scanner</Link>
+                    <Link className="text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer">Diseases</Link>
+                    <Link className="text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer">About</Link>
                 </nav>
             </div>
             <div>
