@@ -131,7 +131,6 @@ const Prediction = () => {
 
                         <div className="mt-3 h-1 w-20 mx-auto bg-gradient-to-r from-green-400 to-emerald-400 rounded-full"></div>
 
-                        {/* Confidence Score */}
                         <div className="mt-5 text-left">
                           <div className="flex justify-between items-center mb-2">
                             <span className="text-sm text-gray-300 font-medium">
@@ -145,7 +144,6 @@ const Prediction = () => {
                             </span>
                           </div>
 
-                          {/* Progress Bar */}
                           <div className="w-full h-2.5 bg-gray-700/70 rounded-full overflow-hidden">
                             <div
                               className="h-full bg-gradient-to-r from-green-400 to-emerald-400 rounded-full transition-all duration-700 ease-out"
@@ -166,7 +164,6 @@ const Prediction = () => {
                       </div>
 
                 )}
-
                 {!result && (
                   <div className="bg-white/5 border border-white/10 rounded-xl p-5 text-center border-dashed">
                     <p className="text-gray-500 text-sm">Waiting for prediction...</p>
@@ -179,7 +176,7 @@ const Prediction = () => {
       </div>
 
       <div className="absolute bottom-6 w-full text-center text-gray-600 text-sm">
-        Developed by <a href="https://github.com/niyomugaboetiene" className="text-gray-500">Niyomugabo Etiene</a>
+        Developed by <a href="https://github.com/niyomugaboetiene" className="text-gray-500 hover:text-blue-500 hover:underline">Niyomugabo Etiene</a>
       </div>
     </div>
   );
