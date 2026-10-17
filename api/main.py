@@ -34,7 +34,7 @@ def read_file_as_image(data) -> np.ndarray:
 
 @app.post("/predict")
 async def predict(
-    #  file in variablename, UploadFile is datatype, and File class is default value
+    #  file in variablename, UploadFile is datatype, and File class is default value which allows to receive file
      file: UploadFile = File(...)
 ):
      image = read_file_as_image (await file.read())
