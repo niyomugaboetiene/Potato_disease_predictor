@@ -93,6 +93,12 @@ export default function Header() {
             </div>
         </div>
       </div>
+
+      <div className='mt-20'>
+          <div className='bg-emerald-400 '>
+            <p className='text-emerald-700 font-bold'>AI POWERED AGRICULTURE</p>
+          </div>
+      </div>
     </div>
   );
 }
