@@ -44,8 +44,12 @@ export default function Header() {
             <div>
                 <nav className="space-x-6 me-12 mt-2 flex items-center">
                     <Link
-                          className="text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer"
                           onClick={() => setActiveLink("/")}
+                          className={
+                            `text-white text-lg pb-1
+                             border-b-2 hover:text-emerald-400
+                              transition-colors cursor-pointer 
+                              ${ActiveLink === "/" ? "border-emerald-400 text-emerald-400" : "border-transparent text-white"}`}
                     >
                         Home
                     </Link>
