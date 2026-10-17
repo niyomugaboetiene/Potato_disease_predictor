@@ -53,18 +53,35 @@ export default function Header() {
                     >
                         Home
                     </Link>
-                    <Link 
-                        className="text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer"
+                   <Link
+                          onClick={() => setActiveLink("/")}
+                          className={
+                            `text-white text-lg pb-1
+                             border-b-2 hover:text-emerald-400
+                              transition-colors cursor-pointer 
+                              ${ActiveLink === "/" ? "border-emerald-400 text-emerald-400" : "border-transparent text-white"}`}
                     >
                         Scanner
                     </Link>
-                    <Link 
-                        className="text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer"
+                    
+                    <Link
+                          onClick={() => setActiveLink("/")}
+                          className={
+                            `text-white text-lg pb-1
+                             border-b-2 hover:text-emerald-400
+                              transition-colors cursor-pointer 
+                              ${ActiveLink === "/" ? "border-emerald-400 text-emerald-400" : "border-transparent text-white"}`}
                     >
                         Diseases
                     </Link>
-                    <Link 
-                        className="text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer"
+                    
+                    <Link
+                          onClick={() => setActiveLink("/")}
+                          className={
+                            `text-white text-lg pb-1
+                             border-b-2 hover:text-emerald-400
+                              transition-colors cursor-pointer 
+                              ${ActiveLink === "/" ? "border-emerald-400 text-emerald-400" : "border-transparent text-white"}`}
                     >
                         About
                     </Link>
