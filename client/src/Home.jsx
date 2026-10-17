@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Image from "./assets/image.png"
-import { FaFire, FaLock, FaLink, FaDesktop } from "react-icons/fa";
 import logo from "./assets/logo.jpeg"
 
 export default function Header() {
@@ -54,34 +53,34 @@ export default function Header() {
                         Home
                     </Link>
                    <Link
-                          onClick={() => setActiveLink("/")}
+                          onClick={() => setActiveLink("/scanner")}
                           className={
                             `text-white text-lg pb-1
                              border-b-2 hover:text-emerald-400
                               transition-colors cursor-pointer 
-                              ${ActiveLink === "/" ? "border-emerald-400 text-emerald-400" : "border-transparent text-white"}`}
+                              ${ActiveLink === "/scanner" ? "border-emerald-400 text-emerald-400" : "border-transparent text-white"}`}
                     >
                         Scanner
                     </Link>
                     
                     <Link
-                          onClick={() => setActiveLink("/")}
+                          onClick={() => setActiveLink("/diesease")}
                           className={
                             `text-white text-lg pb-1
                              border-b-2 hover:text-emerald-400
                               transition-colors cursor-pointer 
-                              ${ActiveLink === "/" ? "border-emerald-400 text-emerald-400" : "border-transparent text-white"}`}
+                              ${ActiveLink === "/diesease" ? "border-emerald-400 text-emerald-400" : "border-transparent text-white"}`}
                     >
                         Diseases
                     </Link>
                     
                     <Link
-                          onClick={() => setActiveLink("/")}
+                          onClick={() => setActiveLink("/about")}
                           className={
                             `text-white text-lg pb-1
                              border-b-2 hover:text-emerald-400
                               transition-colors cursor-pointer 
-                              ${ActiveLink === "/" ? "border-emerald-400 text-emerald-400" : "border-transparent text-white"}`}
+                              ${ActiveLink === "/about" ? "border-emerald-400 text-emerald-400" : "border-transparent text-white"}`}
                     >
                         About
                     </Link>
