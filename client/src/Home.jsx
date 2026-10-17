@@ -17,24 +17,10 @@ export default function Header() {
             
             <div className="flex items-center gap-2">
                 <div className="relative w-8 h-8">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-                        <path d="M12 2L2 22H22L12 2Z" fill="url(#grad1)" fillOpacity="0.5" />
-                        <path d="M12 6L18 18H6L12 6Z" fill="url(#grad2)" />
-                        
-                        <defs>
-                            <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1">
-                                <stop offset="0%" stopColor="#a855f7" />
-                                <stop offset="100%" stopColor="#ec4899" />
-                            </linearGradient>
-                            <linearGradient id="grad2" x1="0" y1="0" x2="1" y2="1">
-                                <stop offset="0%" stopColor="#3b82f6" />
-                                <stop offset="100%" stopColor="#a855f7" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
+                   <img src={logo} alt="Logo" />
                 </div>
                 <h1 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 tracking-wide">
-                    KAIROS
+                    TERASCAN AI
                 </h1>
             </div>
 
