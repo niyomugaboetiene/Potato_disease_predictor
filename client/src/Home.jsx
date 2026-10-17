@@ -7,7 +7,7 @@ export default function Header() {
   const [ActiveLink, setActiveLink] = useState("/");
 
   return (
-    <div className="relative w-full min-h-screen bg-[#08080e] overflow-hidden">
+    <div className="relative w-full min-h-screen bg-[#06131F] overflow-hidden">
 
       <div className="bg-[#0B1F2A] relative z-10 w-full p-3">
         <div className="flex justify-between items-center p-5 max-w-7xl mx-auto px-8">
