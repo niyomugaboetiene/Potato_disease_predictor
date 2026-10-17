@@ -120,13 +120,51 @@ const Prediction = () => {
                 </button>
 
                 {result && (
-                  <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/10 backdrop-blur-lg border border-green-500/30 rounded-xl p-5 text-center animate-fadeIn">
-                    <p className="text-sm text-green-300 uppercase tracking-wider font-semibold mb-1">Detection Successful</p>
-                    <h2 className="text-3xl font-bold text-white">
-                      {result.Class || "Unknown"}
-                    </h2>
-                    <div className="mt-3 h-1 w-20 mx-auto bg-gradient-to-r from-green-400 to-emerald-400 rounded-full"></div>
-                  </div>
+                      <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/10 backdrop-blur-lg border border-green-500/30 rounded-xl p-5 text-center animate-fadeIn">
+                        <p className="text-sm text-green-300 uppercase tracking-wider font-semibold mb-1">
+                          Detection Successful
+                        </p>
+
+                        <h2 className="text-3xl font-bold text-white">
+                          {result.Class || "Unknown"}
+                        </h2>
+
+                        <div className="mt-3 h-1 w-20 mx-auto bg-gradient-to-r from-green-400 to-emerald-400 rounded-full"></div>
+
+                        {/* Confidence Score */}
+                        <div className="mt-5 text-left">
+                          <div className="flex justify-between items-center mb-2">
+                            <span className="text-sm text-gray-300 font-medium">
+                              Confidence Score
+                            </span>
+
+                            <span className="text-lg font-bold text-green-300">
+                              {typeof result.Confidence === "number"
+                                ? (result.Confidence * 100).toFixed(2)
+                                : "0.00"}%
+                            </span>
+                          </div>
+
+                          {/* Progress Bar */}
+                          <div className="w-full h-2.5 bg-gray-700/70 rounded-full overflow-hidden">
+                            <div
+                              className="h-full bg-gradient-to-r from-green-400 to-emerald-400 rounded-full transition-all duration-700 ease-out"
+                              style={{
+                                width: `${
+                                  typeof result.Confidence === "number"
+                                    ? Math.min(100, Math.max(0, result.Confidence * 100))
+                                    : 0
+                                }%`
+                              }}
+                            ></div>
+                          </div>
+
+                          <p className="text-xs text-gray-400 mt-2 text-center">
+                            Model confidence in this prediction
+                          </p>
+                        </div>
+                      </div>
+
                 )}
 
                 {!result && (
