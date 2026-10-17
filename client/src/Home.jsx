@@ -7,12 +7,7 @@ import logo from "./assets/logo.jpeg"
 export default function Header() {
   return (
     <div className="relative w-full min-h-screen bg-[#08080e] overflow-hidden">
-      
-   {/* effects */}
-      <div className="absolute top-[-20%] left-[-10%] w-[600px] h-[600px] bg-emerald-600/40 rounded-full blur-[120px] pointer-events-none"></div>
-      <div className="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] bg-pink-600/30 rounded-full blur-[120px] pointer-events-none"></div>
-      <div className="absolute bottom-[60%] right-[-10%] w-[500px] h-[500px] bg-blue-500/30 rounded-full blur-[120px] pointer-events-none"></div>
-      
+
       <div className="relative z-10 w-full">
         <div className="flex justify-between items-center p-5 max-w-7xl mx-auto px-8">
         
@@ -46,11 +41,12 @@ export default function Header() {
                 </div>
             <div>
                 <nav className="space-x-6 me-12 mt-2 flex items-center">
-                    <Link className="font-bold text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer">About Us</Link>
-                    <Link className="font-bold text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer">Solution</Link>
-                    <Link className="font-bold text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer">Product</Link>
-                    <button className="bg-gradient-to-r from-emerald-600 to-pink-600 text-white font-bold py-2 px-8 rounded-full shadow-[0_0_20px_rgba(168,85,247,0.5)] hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] hover:scale-105 transition-all duration-300">
-                        Login
+                    <Link className="font-bold text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer">Home</Link>
+                    <Link className="font-bold text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer">Scanner</Link>
+                    <Link className="font-bold text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer">Disease</Link>
+                    <Link className="font-bold text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer">About</Link>
+                    <button className="bg-green-600 hover:bg-green-500 text-slate-50 rounded-lg ">
+                        Get Started
                     </button>
                 </nav>
             </div>
