@@ -43,10 +43,27 @@ export default function Header() {
                 </div>
             <div>
                 <nav className="space-x-6 me-12 mt-2 flex items-center">
-                    <Link className="text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer">Home</Link>
-                    <Link className="text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer">Scanner</Link>
-                    <Link className="text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer">Diseases</Link>
-                    <Link className="text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer">About</Link>
+                    <Link
+                          className="text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer"
+                          onClick={() => setActiveLink("/")}
+                    >
+                        Home
+                    </Link>
+                    <Link 
+                        className="text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer"
+                    >
+                        Scanner
+                    </Link>
+                    <Link 
+                        className="text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer"
+                    >
+                        Diseases
+                    </Link>
+                    <Link 
+                        className="text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer"
+                    >
+                        About
+                    </Link>
                 </nav>
             </div>
             <div>
