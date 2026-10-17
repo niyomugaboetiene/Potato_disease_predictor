@@ -48,7 +48,7 @@ const Prediction = () => {
 
   return (
     <div className="relative w-full min-h-screen bg-[#0a0a10] overflow-hidden flex items-center justify-center">
-      <div className="absolute top-[-15%] left-[-10%] w-[700px] h-[700px] bg-gradient-to-br from-purple-600/30 to-blue-600/20 rounded-full blur-[100px] pointer-events-none"></div>
+      <div className="absolute top-[-15%] left-[-10%] w-[700px] h-[700px] bg-gradient-to-br from-emerald-600/30 to-blue-600/20 rounded-full blur-[100px] pointer-events-none"></div>
       <div className="absolute bottom-[-15%] right-[-10%] w-[600px] h-[600px] bg-gradient-to-tl from-pink-600/30 to-rose-500/20 rounded-full blur-[100px] pointer-events-none"></div>
       <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-blue-500/10 rounded-full blur-[80px] pointer-events-none"></div>
 
@@ -89,7 +89,7 @@ const Prediction = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-6">
               
               <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-1000"></div>
+                <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-pink-500 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-1000"></div>
                 <img 
                   src={preview} 
                   alt="Preview" 

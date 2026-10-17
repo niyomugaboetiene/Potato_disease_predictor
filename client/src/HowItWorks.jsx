@@ -9,7 +9,7 @@ export default function HowItWorks() {
     <div className="relative w-full min-h-screen bg-[#08080e] overflow-hidden">
       
 {/* effects */}
-      <div className="absolute top-[-20%] left-[-10%] w-[600px] h-[600px] bg-purple-600/40 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute top-[-20%] left-[-10%] w-[600px] h-[600px] bg-emerald-600/40 rounded-full blur-[120px] pointer-events-none"></div>
       <div className="absolute bottom-[50%] right-[40%] w-[500px] h-[500px] bg-pink-600/30 rounded-full blur-[120px] pointer-events-none"></div>
       <div className="absolute bottom-[60%] right-[-10%] w-[500px] h-[500px] bg-blue-500/30 rounded-full blur-[120px] pointer-events-none"></div>
       
@@ -94,14 +94,14 @@ export default function HowItWorks() {
             <p className='text-center mt-3 text-xl text-white'>Stay today and enhance security with the power of AI.</p>
 
             <div className='mt-12 flex justify-center space-x-12 '>
-              <Link className='text-white bg-gradient-to-r from-purple-600 shadow-xl to-pink-600 text-white flex justify-center items-center shadow-white  font-bold py-2 px-8 rounded-full hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] hover:scale-105 transition-all duration-300' to='/prediction'>Get Started</Link>
+              <Link className='text-white bg-gradient-to-r from-emerald-600 shadow-xl to-pink-600 text-white flex justify-center items-center shadow-white  font-bold py-2 px-8 rounded-full hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] hover:scale-105 transition-all duration-300' to='/prediction'>Get Started</Link>
               <button className='text-white bg-gradient-to-r bg-gray-500 shadow-xl shadow-white font-bold py-4 px-8 rounded-full  hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] hover:scale-105 transition-all duration-300'>Book Demo</button>
             </div>
          </div>
       </div>
 
       <div>
-          <p className='text-center text-white font-bold mb-4'>&copy; {new Date().getFullYear()} TeraScan AI. Built with ❤️ and ☕ by <a href="https://github.com/niyomugaboetiene" target='_blank' rel='noopener noreferrer' className='hover:underline bg-gradient-to-r from-purple-600 shadow-xl to-pink-600 bg-clip-text text-transparent'>Niyomugabo Etiene</a></p>
+          <p className='text-center text-white font-bold mb-4'>&copy; {new Date().getFullYear()} TeraScan AI. Built with ❤️ and ☕ by <a href="https://github.com/niyomugaboetiene" target='_blank' rel='noopener noreferrer' className='hover:underline bg-gradient-to-r from-emerald-600 shadow-xl to-pink-600 bg-clip-text text-transparent'>Niyomugabo Etiene</a></p>
       </div>
    </div>
   );
