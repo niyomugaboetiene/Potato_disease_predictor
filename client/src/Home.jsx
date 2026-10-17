@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Image from "./assets/image.png"
 import { FaFire, FaLock, FaLink, FaDesktop } from "react-icons/fa";
+import logo from "./assets/logo.jpeg"
 
 export default function Header() {
   return (
@@ -16,8 +17,8 @@ export default function Header() {
         <div className="flex justify-between items-center p-5 max-w-7xl mx-auto px-8">
             
             <div className="flex items-center gap-2">
-                <div className="relative w-8 h-8">
-                   <img src={logo} alt="Logo" />
+                <div className="relative w-8 h-8 rounded-full">
+                   <img src={logo} alt="Logo" className='object-cover w-full h-full'/>
                 </div>
                 <h1 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 tracking-wide">
                     TERASCAN AI
