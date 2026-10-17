@@ -94,11 +94,18 @@ export default function Header() {
         </div>
       </div>
 
-      <div className='mt-20'>
-          <div className='bg-emerald-400 '>
-            <p className='text-emerald-700 font-bold'>AI POWERED AGRICULTURE</p>
-          </div>
+    <div className='flex '>
+     <div className='mt-20'>
+        <div className="bg-emerald-300 backdrop-blur-md px-4 py-1 rounded-full  ms-5">
+        <p className="text-emerald-700 font-bold text-center">
+            AI POWERED AGRICULTURE
+        </p>
+        </div>
+        <div>
+            <h1>Healithy Potatoes <br /> for a Brighter Tommoro</h1>
+        </div>
       </div>
+    </div>
     </div>
   );
 }
