@@ -20,7 +20,7 @@ const Prediction = () => {
     reader.readAsDataURL(file);
   };
 
-  const classifyImage = async () => {
+  const Prediction = async () => {
     if (!image) {
       alert("Please select an image first!");
       return;
@@ -29,14 +29,14 @@ const Prediction = () => {
     setIsLoading(true);
     try {
       const formData = new FormData();
-      formData.append("image_data", preview);
+      formData.append("file", image);
 
       const response = await axios.post(
-        "http://127.0.0.1:5000/classify_image",
+        "http://localhost:5000/predict",
         formData
       );
 
-      setResult(response.data[0]);
+      setResult(response.data);
       console.log(response.data);
     } catch (err) {
       console.error(err);
@@ -56,9 +56,9 @@ const Prediction = () => {
         
         <div className="text-center mb-10">
           <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 mb-3">
-            Face Recognition App
+            Potato Disease Predictor App
           </h1>
-          <p className="text-gray-400 text-lg">Upload an image and let our AI identify the person.</p>
+          <p className="text-gray-400 text-lg">Upload an potato image and let our AI identify the diesease.</p>
         </div>
 
         <div className="bg-white/5 backdrop-blur-2xl border border-white/10 rounded-3xl shadow-2xl p-8 md:p-12">
@@ -100,7 +100,7 @@ const Prediction = () => {
               <div className="flex flex-col justify-between h-full gap-6">
                 
                 <button 
-                  onClick={classifyImage} 
+                  onClick={Prediction} 
                   disabled={isLoading}
                   className={`w-full py-4 rounded-xl font-bold text-white transition-all duration-300 shadow-lg 
                     ${isLoading 
@@ -116,14 +116,14 @@ const Prediction = () => {
                       </svg>
                       Analyzing...
                     </span>
-                  ) : "🚀 Identify Person"}
+                  ) : "🚀 Identify Disease"}
                 </button>
 
                 {result && (
                   <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/10 backdrop-blur-lg border border-green-500/30 rounded-xl p-5 text-center animate-fadeIn">
                     <p className="text-sm text-green-300 uppercase tracking-wider font-semibold mb-1">Detection Successful</p>
                     <h2 className="text-3xl font-bold text-white">
-                      {result.class || "Unknown"}
+                      {result.Class || "Unknown"}
                     </h2>
                     <div className="mt-3 h-1 w-20 mx-auto bg-gradient-to-r from-green-400 to-emerald-400 rounded-full"></div>
                   </div>
