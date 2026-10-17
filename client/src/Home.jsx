@@ -43,12 +43,14 @@ export default function Header() {
                 <nav className="space-x-6 me-12 mt-2 flex items-center">
                     <Link className="font-bold text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer">Home</Link>
                     <Link className="font-bold text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer">Scanner</Link>
-                    <Link className="font-bold text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer">Disease</Link>
+                    <Link className="font-bold text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer">Diseases</Link>
                     <Link className="font-bold text-white text-lg hover:text-emerald-400 transition-colors cursor-pointer">About</Link>
-                    <button className="bg-green-600 hover:bg-green-500 text-slate-50 rounded-lg ">
-                        Get Started
-                    </button>
                 </nav>
+            </div>
+            <div>
+              <button className="bg-green-400 hover:bg-green-500 text-black font-bold rounded-lg  py-3 px-6">
+                  Get Started
+             </button>
             </div>
         </div>
       </div>
