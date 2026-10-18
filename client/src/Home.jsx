@@ -94,27 +94,38 @@ export default function Header() {
         </div>
       </div>
 
-    <div className='flex justify-between mx-auto max-w-7xl w-full'>
-     <div className='mt-20 ms-10'>
-        <div className="bg-emerald-300 backdrop-blur-md px-4 py-1 w-1/3 rounded-full  ms-5">
-        <p className="text-emerald-700 font-bold text-center">
-            AI POWERED AGRICULTURE
-        </p>
+        <div className="flex justify-between mx-auto max-w-7xl w-full">
+        <div className="mt-20 ms-10 w-1/2 shrink-0">
+          <div className="bg-emerald-200 backdrop-blur-md px-4 py-1 w-fit rounded-full ms-5">
+            <p className="text-emerald-700 font-bold text-center">
+              AI POWERED AGRICULTURE
+            </p>
+          </div>
+
+          <div className="ms-5 mt-4">
+            <h1 className="text-white font-bold text-8xl">
+              Healthy Potatoes
+              <span className="text-emerald-400">
+                <br /> for a Brighter <br /> Tomorrow
+              </span>
+            </h1>
+
+            <p className="text-white font-light mt-10 text-xl max-w-xl">
+              TeraScan AI helps you detect potato diseases using advanced AI.
+              Upload a leaf image and get instant results, so you can protect
+              your crops and increase your harvest.
+            </p>
+          </div>
         </div>
-        <div className='ms-5 mt-4'>
-            <h1 className='text-white font-bold text-8xl'>Healthy Potatoes <span className='text-emerald-400'><br /> for a Brighter <br /> Tomorow</span></h1>
-            <p className='text-white font-light mt-10 text-xl w-130'>
-              TeraScan AI helps you to detect potato diseases using advanced AI. 
-              Upload a leaf image and get instant results. so you can  protect your crops
-              and increase your harvest.</p>
+
+        <div className="flex-1 min-w-0">
+          <img
+            src={SideImage}
+            alt="Potato plant"
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
-      <div>
-        <div className='w-full h-full'>
-          <img src={SideImage} alt="Side Image" className='object-cover w-full h-full'/>
-        </div>
-      </div>
-    </div>
     </div>
   );
 }
