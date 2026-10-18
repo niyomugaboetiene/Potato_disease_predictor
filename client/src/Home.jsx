@@ -102,7 +102,11 @@ export default function Header() {
         </p>
         </div>
         <div>
-            <h1>Healithy Potatoes <br /> for a Brighter Tommoro</h1>
+            <h1>Healithy Potatoes <br /> for a Brighter Tomorow</h1>
+            <p>
+              TeraScan AI helps you to detect potato diseases using advanced AI. 
+              Upload a leaf image and get instant results. so you can  protect your crops
+              and increase harvest.</p>
         </div>
       </div>
       <div>
