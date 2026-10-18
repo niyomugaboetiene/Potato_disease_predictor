@@ -94,7 +94,7 @@ export default function Header() {
         </div>
       </div>
 
-    <div className='flex '>
+    <div className='flex justify-between'>
      <div className='mt-20'>
         <div className="bg-emerald-300 backdrop-blur-md px-4 py-1 rounded-full  ms-5">
         <p className="text-emerald-700 font-bold text-center">
@@ -107,7 +107,7 @@ export default function Header() {
       </div>
       <div>
         <div>
-          <img src={} alt="" />
+          <img src={SideImage} alt="Side Image" />
         </div>
       </div>
     </div>
