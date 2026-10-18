@@ -95,15 +95,15 @@ export default function Header() {
       </div>
 
     <div className='flex justify-between'>
-     <div className='mt-20'>
+     <div className='mt-20 ms-10'>
         <div className="bg-emerald-300 backdrop-blur-md px-4 py-1 w-1/4 rounded-full  ms-5">
         <p className="text-emerald-700 font-bold text-center">
             AI POWERED AGRICULTURE
         </p>
         </div>
         <div className='ms-5 mt-4'>
-            <h1 className='text-white font-bold text-8xl'>Healthy Potatoes <span><br /> for a Brighter <br /> Tomorow</span></h1>
-            <p>
+            <h1 className='text-white font-bold text-8xl'>Healthy Potatoes <span className='text-emerald-400'><br /> for a Brighter <br /> Tomorow</span></h1>
+            <p className='text-white mt-10'>
               TeraScan AI helps you to detect potato diseases using advanced AI. 
               Upload a leaf image and get instant results. so you can  protect your crops
               and increase harvest.</p>
