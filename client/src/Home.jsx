@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Image from "./assets/image.png"
 import logo from "./assets/logo.jpeg"
+import SideImage from "./assets/sample-background-image.jpg";
 
 export default function Header() {
   const [ActiveLink, setActiveLink] = useState("/");
@@ -103,6 +103,11 @@ export default function Header() {
         </div>
         <div>
             <h1>Healithy Potatoes <br /> for a Brighter Tommoro</h1>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src={} alt="" />
         </div>
       </div>
     </div>
