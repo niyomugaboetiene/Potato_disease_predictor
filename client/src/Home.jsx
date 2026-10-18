@@ -101,8 +101,8 @@ export default function Header() {
             AI POWERED AGRICULTURE
         </p>
         </div>
-        <div>
-            <h1 className='text-white font-bold'>Healithy Potatoes <br /> for a Brighter Tomorow</h1>
+        <div className='ms-5 mt-4'>
+            <h1 className='text-white font-bold text-8xl'>Healthy Potatoes <span><br /> for a Brighter <br /> Tomorow</span></h1>
             <p>
               TeraScan AI helps you to detect potato diseases using advanced AI. 
               Upload a leaf image and get instant results. so you can  protect your crops
