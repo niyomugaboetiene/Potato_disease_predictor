@@ -103,15 +103,15 @@ export default function Header() {
         </div>
         <div className='ms-5 mt-4'>
             <h1 className='text-white font-bold text-8xl'>Healthy Potatoes <span className='text-emerald-400'><br /> for a Brighter <br /> Tomorow</span></h1>
-            <p className='text-white mt-10 text-xl w-130'>
+            <p className='text-white font-light mt-10 text-xl w-130'>
               TeraScan AI helps you to detect potato diseases using advanced AI. 
               Upload a leaf image and get instant results. so you can  protect your crops
               and increase your harvest.</p>
         </div>
       </div>
       <div>
-        <div>
-          <img src={SideImage} alt="Side Image" />
+        <div className='w-full h-full'>
+          <img src={SideImage} alt="Side Image" className='object-cover w-full h-full'/>
         </div>
       </div>
     </div>
