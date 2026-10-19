@@ -103,7 +103,7 @@ export default function Header() {
           </div>
 
           <div className="ms-5 mt-4">
-            <h1 className="text-white font-bold text-8xl">
+            <h1 className="text-white font-bold text-7xl">
               Healthy Potatoes
               <span className="text-emerald-400">
                 <br /> for a Brighter <br /> Tomorrow
@@ -115,6 +115,11 @@ export default function Header() {
               Upload a leaf image and get instant results, so you can protect
               your crops and increase your harvest.
             </p>
+
+            <div>
+              <button>Open Potato leaf</button>
+              <button>Learn More</button>
+            </div>
           </div>
         </div>
 
