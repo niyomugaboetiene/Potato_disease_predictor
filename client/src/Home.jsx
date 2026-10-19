@@ -115,7 +115,7 @@ export default function Header() {
               Upload a leaf image and get instant results, so you can protect
               your crops and increase your harvest.
             </p>
-            <div>
+            <div className='mt-4 flex space-x-4'>
               <button>Open Potato leaf</button>
               <button>Learn More</button>
             </div>
