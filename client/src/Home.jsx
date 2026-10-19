@@ -116,8 +116,8 @@ export default function Header() {
               your crops and increase your harvest.
             </p>
             <div className='mt-12 flex space-x-4'>
-              <button className='text-white font-bold py-3 px-6 bg-emerald-400'>Open Potato leaf</button>
-              <button>Learn More</button>
+              <button className='text-lg text-white font-bold py-3 px-6 bg-emerald-400 rounded-lg hover:bg-emerald-500 transition-colors'>Open Potato leaf</button>
+              <button className='text-white font-bold py-3 px-6 bg-[#0B1F2A] border-2 border-slate-800 text-lg rounded-lg transition-colors'>Learn More</button>
             </div>
           </div>
         </div>
