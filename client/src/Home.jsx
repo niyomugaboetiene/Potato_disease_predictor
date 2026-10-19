@@ -87,7 +87,7 @@ export default function Header() {
                 </nav>
             </div>
             <div>
-              <button className="bg-green-400 hover:bg-green-500 text-black font-bold rounded-lg  py-3 px-6">
+              <button className="bg-emerald-400 hover:bg-emerald-500 text-black font-bold rounded-lg  py-3 px-6">
                   Get Started
              </button>
             </div>
@@ -115,8 +115,8 @@ export default function Header() {
               Upload a leaf image and get instant results, so you can protect
               your crops and increase your harvest.
             </p>
-            <div className='mt-4 flex space-x-4'>
-              <button>Open Potato leaf</button>
+            <div className='mt-12 flex space-x-4'>
+              <button className='text-white font-bold py-3 px-6 bg-emerald-400'>Open Potato leaf</button>
               <button>Learn More</button>
             </div>
           </div>
