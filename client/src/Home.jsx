@@ -131,9 +131,9 @@ export default function Header() {
           />
         </div>
       </div>
-      <div>
+      <div className='bg-[#0B1F2A]'>
           <div>
-               <FiFastForward />
+               <FiFastForward className='text-white'/>
           </div>
       </div>
     </div>
