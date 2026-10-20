@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaLock, FaFile, FaFolder, FaKey } from 'react-icons/fa';
 
 export default function HowItWorks() {
   return (
@@ -15,7 +14,7 @@ export default function HowItWorks() {
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gauge preview-icon"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg>
                     </div>
                     <div className='text-blue-500 mt-3'>
-                          <h1>Boost your yeild</h1>
+                          <h1>1. Upload Image</h1>
                           <p>Keep your crops healthy</p>
                      </div>
                 </div>
