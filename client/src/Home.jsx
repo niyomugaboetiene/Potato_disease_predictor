@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {FiFastForward, FiUpload} from "react-icons/fi"
+import { motion } from "framer-motion";
+
 import logo from "./assets/logo.jpeg"
 import SideImage from "./assets/sample-background-image.jpg";
 
@@ -96,7 +98,7 @@ export default function Header() {
       </div>
 
         <div className="flex justify-between mx-auto max-w-7xl w-full">
-        <div className="mt-20 ms-10 w-1/2 shrink-0">
+        <motion.div className="mt-20 ms-10 w-1/2 shrink-0">
           <div className="bg-emerald-200 backdrop-blur-md px-4 py-1 w-fit rounded-full ms-5">
             <p className="text-emerald-700 font-bold text-center">
               AI POWERED AGRICULTURE
@@ -121,7 +123,7 @@ export default function Header() {
               <button className='text-white font-bold py-3 px-6 bg-[#0B1F2A] border-2 border-slate-800 text-lg rounded-lg transition-colors'>Learn More</button>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         <div className="flex-1 min-w-0">
           <img
