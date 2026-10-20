@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {FiFastForward, FiUpload} from "react-icons/fi"
-import { motion } from "framer-motion";
+import { easeOut, motion } from "framer-motion";
 
 import logo from "./assets/logo.jpeg"
 import SideImage from "./assets/sample-background-image.jpg";
@@ -146,7 +146,7 @@ export default function Header() {
       <motion.div 
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{}}
+        transition={{ duration: 3, ease: "easeOut" }}
         className='bg-[#0B1F2A] p-5 max-w-7xl mx-auto px-8'
       >
         <div className='flex justify-between'>
