@@ -140,6 +140,7 @@ export default function Header() {
             </div>
             <div className='text-slate-100'>
               <h1>Fast and Accurate</h1>
+              <p>Detect disease in second</p>
             </div>
         </div>
       </div>
