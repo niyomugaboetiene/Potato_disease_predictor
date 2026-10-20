@@ -6,7 +6,8 @@ export default function HowItWorks() {
     <div className="relative w-full min-h-screen bg-[#06131F] overflow-hidden">
         <div>
             <h1>How It Works</h1>  
-
+            <p>Simple Steps, Powerful Results</p>
+            <p>Get your potato leaf and get result in just few clicks</p>
         </div>      
     </div>
   );
