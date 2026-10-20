@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import {FiUpload} from "react-icons/fi"
+import {FiFastForward, FiUpload} from "react-icons/fi"
 import logo from "./assets/logo.jpeg"
 import SideImage from "./assets/sample-background-image.jpg";
 
@@ -132,7 +132,9 @@ export default function Header() {
         </div>
       </div>
       <div>
-        
+          <div>
+               <FiFastForward />
+          </div>
       </div>
     </div>
   );
