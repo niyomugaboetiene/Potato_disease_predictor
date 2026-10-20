@@ -158,8 +158,8 @@ export default function Header() {
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gauge preview-icon"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg>
               </div>
               <div className='text-slate-100 mt-3'>
-                 <h1>Fast and Accurate</h1>
-                 <p>Detect disease in second</p>
+                 <h1>Boost your yeild</h1>
+                 <p>Keep your crops healthy</p>
             </div>
             </div>
             
@@ -168,8 +168,8 @@ export default function Header() {
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gauge preview-icon"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg>
               </div>
               <div className='text-slate-100 mt-3'>
-                 <h1>Fast and Accurate</h1>
-                 <p>Detect disease in second</p>
+                 <h1>Designed for farmers</h1>
+                 <p>Build for Rwanda and beyond</p>
             </div>
             </div>
         </div>
