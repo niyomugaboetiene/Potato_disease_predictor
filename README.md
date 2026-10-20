@@ -1,4 +1,4 @@
-# Potato_disease_predictor
+# TeraScan AI
 This AI-based project which takes image of sick potato and try to predict its disease
 
 # Sickness of Plants is one of most problem which cause financial loss to different farmers
