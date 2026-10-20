@@ -100,7 +100,7 @@ export default function Header() {
         <div className="flex justify-between mx-auto max-w-7xl w-full">
         <motion.div
              className="mt-20 ms-10 w-1/2 shrink-0"
-             initial={{ opacity: 0, y: 20 }}
+             initial={{ opacity: 0, y: -20 }}
              animate={{ opacity: 1, y: 0 }}
              transition={{ duration: 1}}
          >
