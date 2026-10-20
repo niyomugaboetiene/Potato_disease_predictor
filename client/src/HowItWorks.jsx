@@ -38,16 +38,7 @@ export default function HowItWorks() {
                           <p className='text-slate-400 mt-3'>Select or drag and drop <br /><span className='ms-11'>a leaf image</span></p>
                      </div>
                 </div>
-                
-                <div >
-                    <div className='bg-green-600 rounded-full flex items-center w-25 h-25 px-10 py-10 text-slate-100 ms-10'>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gauge preview-icon"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg>
-                    </div>
-                    <div className='text-slate-800 mt-3'>
-                          <h1 className='ms-3 font-bold text-xl'>1. Upload Image</h1>
-                          <p className='text-slate-400 mt-3'>Select or drag and drop <br /><span className='ms-11'>a leaf image</span></p>
-                     </div>
-                </div>
+
             </div>
         </div>      
     </div>
