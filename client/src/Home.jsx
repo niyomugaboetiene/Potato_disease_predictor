@@ -132,6 +132,9 @@ export default function Header() {
 
         <motion.div 
            className="flex-1 min-w-0"
+           initial={{ opacity: 0, x: 100}}
+           animate={{ opacity: 1, x: 0 }}
+           transition={{ duration: 1, ease: "easeOut"}}
           >
           <img
             src={SideImage}
