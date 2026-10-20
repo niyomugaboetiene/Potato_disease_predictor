@@ -11,3 +11,6 @@ This AI-based project which takes image of sick potato and try to predict its di
 
 <h1>This project is build with love and coffee at desk by NIYOMUGABO Etiene & Code Explorer Rwanda Ltd</h1>
 <h1>Enjoy by using our intelligent App</h1>
+
+<h1>Figma Design Image</h1>
+<img src="./Figma_potato_disease_predictor.png" />
