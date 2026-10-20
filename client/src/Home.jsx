@@ -130,13 +130,15 @@ export default function Header() {
           </div>
         </motion.div>
 
-        <div className="flex-1 min-w-0">
+        <motion.div 
+           className="flex-1 min-w-0"
+          >
           <img
             src={SideImage}
             alt="Potato plant"
             className="w-full h-full object-cover"
           />
-        </div>
+        </motion.div>
       </div>
       <div className='bg-[#0B1F2A] p-5 max-w-7xl mx-auto px-8'>
         <div className='flex justify-between'>
