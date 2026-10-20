@@ -143,7 +143,12 @@ export default function Header() {
           />
         </motion.div>
       </div>
-      <div className='bg-[#0B1F2A] p-5 max-w-7xl mx-auto px-8'>
+      <motion.div 
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{}}
+        className='bg-[#0B1F2A] p-5 max-w-7xl mx-auto px-8'
+      >
         <div className='flex justify-between'>
           <div className='flex space-x-4 '>
             <div className='bg-emerald-600 rounded-full p-3 py-6 px-6 text-slate-100'>
@@ -185,7 +190,7 @@ export default function Header() {
             </div>
             </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
