@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { FiAlignLeft } from 'react-icons/fi';
 export default function HowItWorks() {
   return (
     <div className="relative w-full min-h-screen bg-slate-100overflow-hidden">
@@ -15,6 +15,9 @@ export default function HowItWorks() {
                     <div className='text-slate-800 mt-3'>
                           <h1 className='ms-3 font-bold text-xl'>1. Upload Image</h1>
                           <p className='text-slate-400 mt-3'>Select or drag and drop <br /><span className='ms-11'>a leaf image</span></p>
+                     </div>
+                     <div>
+                        <FiAlignLeft />
                      </div>
                 </div>
                 
