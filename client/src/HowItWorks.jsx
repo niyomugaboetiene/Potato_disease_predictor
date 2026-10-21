@@ -28,7 +28,7 @@ export default function HowItWorks() {
                           <h1 className='ms-3 font-bold text-xl'>2. AI Analysis</h1>
                           <p className='text-slate-400 mt-3'>Our model processes <br /><span className=''>the image using deep learning</span></p>
                      </div>
-                    <div className='relative bottom-35 right-0 left-55'>
+                    <div className='relative bottom-35 right-0 left-60'>
                         <FiArrowRight className='text-4xl text-slate-400'/>
                      </div>
                 </div>
