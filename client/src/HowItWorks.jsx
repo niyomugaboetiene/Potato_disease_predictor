@@ -46,7 +46,7 @@ export default function HowItWorks() {
 
             <div className='mt-10'>
                    <h1 className='text-center font-bold text-slate-800 text-4xl'>Supported Diseases</h1>  
-                   <p className='text-center mt-3 text-2xl text-slate-800 font-bold'>Know What You Are Dealing With</p>
+                   <p className='text-center mt-3 text-xl font-stretch-105% text-slate-400'>Know What You Are Dealing With</p>
 
             </div>
         </div>      
