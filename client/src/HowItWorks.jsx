@@ -27,7 +27,7 @@ export default function HowItWorks() {
                      </div>
                 </div>
                 
-                <div >
+                <div>
                     <div className='bg-green-600 rounded-full flex items-center w-25 h-25 px-10 py-10 text-slate-100 ms-10 '>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check preview-icon"><path d="M20 6 9 17l-5-5"/></svg>
                     </div>
@@ -36,7 +36,6 @@ export default function HowItWorks() {
                           <p className='text-slate-400 mt-3'>See the desease name <br /><span>Confidence score and advice</span></p>
                      </div>
                 </div>
-
             </div>
         </div>      
     </div>
