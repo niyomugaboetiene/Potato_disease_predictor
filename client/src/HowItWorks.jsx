@@ -9,12 +9,17 @@ export default function HowItWorks() {
   return (
     <div className="relative w-full min-h-screen bg-slate-100overflow-hidden">
         <div className='w-full mx-auto max-w-7xl mt-12'>
-           <div>
+           <motion.div
+             initial={{ opacity: 0, y:30 }}
+             animate={{ opacity: 1, y: 0}}
+             viewport={{ once: true,  amount: 0.3}}
+             transition={{ duration: 2, ease: "easeInOut"}}
+           >
               <h1 className='text-center font-bold text-slate-800 text-4xl'>How It Works</h1>  
               <p className='text-center mt-3 text-2xl text-slate-800 font-bold'>Simple Steps, Powerful Results</p>
               <p className='text-center mt-3 text-slate-500'>Get your potato leaf and get result in just few clicks</p>
 
-           </div>
+           </motion.div>
             <div className='mt-5 mx-auto max-w-4xl flex justify-between'>
                 <div >
                     <div className='bg-green-600 rounded-full flex items-center w-25 h-25 px-10 py-10 text-slate-100 ms-10'>
