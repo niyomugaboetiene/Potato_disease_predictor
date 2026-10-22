@@ -24,7 +24,7 @@ export default function HowItWorks() {
                className='mt-5 mx-auto max-w-4xl flex justify-between'
                initial={{ opacity: 0, y: 20 }}
                whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true, amount: 0.3}}
+               viewport={{ once: false, amount: 0.3}}
                transition={{ duration: 2, ease: "easeInOut"}}
             >
                 <div >
@@ -62,7 +62,10 @@ export default function HowItWorks() {
                 </div>
             </motion.div>
 
-            <motion.div className='mt-10'>
+            <motion.div 
+               className='mt-10'
+               
+               >
                    <h1 className='text-center font-bold text-slate-800 text-4xl'>Supported Diseases</h1>  
                    <p className='text-center mt-3 text-lg font-stretch-105% text-slate-400'>Know What You Are Dealing With</p>
                     <div className='mt-5 mx-auto max-w-7xl flex space-x-6'>
