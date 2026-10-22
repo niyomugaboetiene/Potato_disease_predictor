@@ -68,8 +68,8 @@ export default function HowItWorks() {
                             <img src={LateBright} alt="Ealiry Bright Image" className='w-full h-full object-cover rounded-3xl' />
                           </div>
                           <div className='mt-3'>
-                            <h1 className='text-slate-800 font-bold text-3xl'>Earily Bright</h1>
-                            <h1 className='text-slate-500 text-2xl mt-2'>(Alternaria solani)</h1>
+                            <h1 className='text-slate-800 font-bold text-3xl'>Late Bright</h1>
+                            <h1 className='text-slate-500 text-2xl mt-2'>()</h1>
                             <p className='text-slate-500 text-xl mt-2'>Brown spots with concentric rings on older leaves</p>
                           </div>
                     </div>
