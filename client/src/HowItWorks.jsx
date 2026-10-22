@@ -12,7 +12,7 @@ export default function HowItWorks() {
            <motion.div
              initial={{ opacity: 0, y:30 }}
              animate={{ opacity: 1, y: 0}}
-             viewport={{ once: true,  amount: 0.3}}
+             viewport={{ once: true,  amount: 0.2 }}
              transition={{ duration: 2, ease: "easeInOut"}}
            >
               <h1 className='text-center font-bold text-slate-800 text-4xl'>How It Works</h1>  
