@@ -53,8 +53,8 @@ export default function HowItWorks() {
                    <p className='text-center mt-3 text-lg font-stretch-105% text-slate-400'>Know What You Are Dealing With</p>
                     <div className='mt-5 mx-auto max-w-5xl flex justify-between'>
                     <div >
-                          <div>
-                            <img src="" alt="" />
+                          <div className='w-12 h-12'>
+                            <img src={EaliryBright} alt="Ealiry Bright Image" />
                           </div>
                     </div>
                     
