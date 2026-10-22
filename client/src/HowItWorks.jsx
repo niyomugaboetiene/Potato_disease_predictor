@@ -59,7 +59,7 @@ export default function HowItWorks() {
                           <div className='mt-3'>
                             <h1 className='text-slate-800 font-bold text-3xl'>Earily Bright</h1>
                             <h1 className='text-slate-500 text-2xl mt-2'>(Alternaria solani)</h1>
-                            <p className='text-slate-500 text-xl mt-2'>Brown spots with concentric rings on older leaves</p>
+                            <p className='text-slate-500 text-xl mt-2 w-70'>Brown spots with concentric rings on older leaves</p>
                           </div>
                     </div>
                     
@@ -70,7 +70,7 @@ export default function HowItWorks() {
                           <div className='mt-3'>
                             <h1 className='text-slate-800 font-bold text-3xl'>Late Bright</h1>
                             <h1 className='text-slate-500 text-2xl mt-2'>(Phytophthora infestand)</h1>
-                            <p className='text-slate-500 text-xl mt-2'>Large dark lesions often with white mold underneath</p>
+                            <p className='text-slate-500 text-xl mt-2 w-70'>Large dark lesions often with white mold underneath</p>
                           </div>
                     </div>
                         
@@ -79,9 +79,9 @@ export default function HowItWorks() {
                             <img src={Healthy} alt="Ealiry Bright Image" className='w-full h-full object-cover rounded-3xl' />
                           </div>
                           <div className='mt-3'>
-                            <h1 className='text-slate-800 font-bold text-3xl'>Earily Bright</h1>
-                            <h1 className='text-slate-500 text-2xl mt-2'>(Alternaria solani)</h1>
-                            <p className='text-slate-500 text-xl mt-2'>Brown spots with concentric rings on older leaves</p>
+                            <h1 className='text-slate-800 font-bold text-3xl'>Healthy</h1>
+                            <h1 className='text-slate-500 text-2xl mt-2'>(No disease detected)</h1>
+                            <p className='text-slate-500 text-xl mt-2 w-70'>Green, fresh leaves, with no viable spots</p>
                           </div>
                     </div>
                     </div>
