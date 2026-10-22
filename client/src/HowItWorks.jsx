@@ -52,14 +52,14 @@ export default function HowItWorks() {
                    <h1 className='text-center font-bold text-slate-800 text-4xl'>Supported Diseases</h1>  
                    <p className='text-center mt-3 text-lg font-stretch-105% text-slate-400'>Know What You Are Dealing With</p>
                     <div className='mt-5 mx-auto max-w-5xl flex justify-between'>
-                    <div className='shadow-xl p-3 w-105 h-70'>
-                          <div className='w-full h-full'>
+                    <div className='shadow-xl p-3 w-105 h-115'>
+                          <div className='w-full h-70'>
                             <img src={EaliryBright} alt="Ealiry Bright Image" className='w-full h-full object-cover rounded-3xl' />
                           </div>
                           <div className='mt-3'>
                             <h1 className='text-slate-800 font-bold text-3xl'>Earily Bright</h1>
-                            <h1 className='text-slate-400 text-2xl'>(Alternaria solani)</h1>
-                            <p className='text-slate-400 text-2xl'>Brown spots with concentric rings on older leaves</p>
+                            <h1 className='text-slate-400 text-2xl mt-2'>(Alternaria solani)</h1>
+                            <p className='text-slate-400 text-xl mt-2'>Brown spots with concentric rings on older leaves</p>
                           </div>
                     </div>
                     
