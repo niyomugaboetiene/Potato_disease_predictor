@@ -106,6 +106,10 @@ export default function HowItWorks() {
                     </div>
                     </div>
             </motion.div>
+
+            <div>
+                
+            </div>
         </div>      
     </div>
   );
