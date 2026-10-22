@@ -58,6 +58,8 @@ export default function HowItWorks() {
                           </div>
                           <div>
                             <h1>Earily Bright</h1>
+                            <h1>(Alternaria solani)</h1>
+                            <p>Brown spots with concentric rings on older leaves</p>
                           </div>
                     </div>
                     
