@@ -62,7 +62,7 @@ export default function HowItWorks() {
                 </div>
             </motion.div>
 
-            <div className='mt-10'>
+            <motion.div className='mt-10'>
                    <h1 className='text-center font-bold text-slate-800 text-4xl'>Supported Diseases</h1>  
                    <p className='text-center mt-3 text-lg font-stretch-105% text-slate-400'>Know What You Are Dealing With</p>
                     <div className='mt-5 mx-auto max-w-7xl flex space-x-6'>
@@ -99,7 +99,7 @@ export default function HowItWorks() {
                           </div>
                     </div>
                     </div>
-            </div>
+            </motion.div>
         </div>      
     </div>
   );
