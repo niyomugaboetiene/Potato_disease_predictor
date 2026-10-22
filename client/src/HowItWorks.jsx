@@ -64,7 +64,10 @@ export default function HowItWorks() {
 
             <motion.div 
                className='mt-10'
-               
+               initial={{ opacity: 0, y: 30 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               viewport={{ once: false, amount: 0.3 }}
+               transition={{ duration: 2, ease: "easeInOut"}}
                >
                    <h1 className='text-center font-bold text-slate-800 text-4xl'>Supported Diseases</h1>  
                    <p className='text-center mt-3 text-lg font-stretch-105% text-slate-400'>Know What You Are Dealing With</p>
