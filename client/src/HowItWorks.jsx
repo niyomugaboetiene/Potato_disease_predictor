@@ -13,7 +13,7 @@ export default function HowItWorks() {
              initial={{ opacity: 0, y: 20 }}
              whileInView={{ opacity: 1, y: 0}}
              viewport={{ once: true,  amount: 0.2 }}
-             transition={{ duration: 2, ease: "easeInOut"}}
+             transition={{ duration: 1, ease: "easeInOut"}}
            >
               <h1 className='text-center font-bold text-slate-800 text-4xl'>How It Works</h1>  
               <p className='text-center mt-3 text-2xl text-slate-800 font-bold'>Simple Steps, Powerful Results</p>
@@ -25,6 +25,7 @@ export default function HowItWorks() {
                initial={{ opacity: 0, y: 20 }}
                whileInView={{ opacity: 1, y: 0 }}
                viewport={{ once: true, amount: 0.3}}
+               transition={{ duration: 2, ease: "easeInOut"}}
             >
                 <div >
                     <div className='bg-green-600 rounded-full flex items-center w-25 h-25 px-10 py-10 text-slate-100 ms-10'>
