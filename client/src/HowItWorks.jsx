@@ -52,9 +52,12 @@ export default function HowItWorks() {
                    <h1 className='text-center font-bold text-slate-800 text-4xl'>Supported Diseases</h1>  
                    <p className='text-center mt-3 text-lg font-stretch-105% text-slate-400'>Know What You Are Dealing With</p>
                     <div className='mt-5 mx-auto max-w-5xl flex justify-between'>
-                    <div >
-                          <div className='w-110 h-70'>
+                    <div className='shadow-xl p-3'>
+                          <div className='w-105 h-70'>
                             <img src={EaliryBright} alt="Ealiry Bright Image" className='w-full h-full object-cover rounded-3xl' />
+                          </div>
+                          <div>
+                            <h1>Earily Bright</h1>
                           </div>
                     </div>
                     
