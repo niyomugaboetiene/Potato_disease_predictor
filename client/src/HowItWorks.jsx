@@ -107,13 +107,12 @@ export default function HowItWorks() {
                     </div>
                     </div>
             </motion.div>
-
-            <div>
+        </div>  
+        <div className='mt-12 max-w-[70px] mx-auto w-full'>
                 <div>
                   <img src={Bg} alt="Image" />
                 </div>
-            </div>
-        </div>      
+         </div>    
     </div>
   );
 }
