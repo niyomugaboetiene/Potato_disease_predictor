@@ -59,7 +59,7 @@ const Prediction = () => {
           <div className="mx-auto w-full max-w-7xl">
                <div className="mt-12">
                  <h1 className="text-center text-white font-bold text-6xl">Scan your Potato Leaf</h1>
-                 <p>Upload  a clear image of a potato leaf to detect its diseases using our AI model.</p>
+                 <p className="text-center text-white mt-6 text-2xl">Upload  a clear image of a potato leaf to detect its diseases <br />using our AI model.</p>
                </div>
           </div>
      </div>
