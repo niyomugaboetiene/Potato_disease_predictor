@@ -110,7 +110,7 @@ export default function HowItWorks() {
         </div>  
         <div className='mt-12 max-w-400 mx-auto w-full mb-4'>
              <img src={Bg} alt="Image" />
-             <div className='absolute bottom-64 left-50'>
+             <div className='absolute bottom-50 left-60'>
               <h1 className='text-5xl text-white font-bold'>Support Sustainable Farming <br /> With AI Technology</h1>
               <p className='text-white mt-6 text-2xl'>TeraScan AI is built to help farmers make better decisions, <br /> reduce crop loss and acheive higher yeilds.</p>
              </div>
