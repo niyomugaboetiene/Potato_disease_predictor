@@ -109,15 +109,22 @@ export default function HowItWorks() {
             </motion.div>
         </div>  
         <div className='mt-12 max-w-400 mx-auto w-full mb-4'>
-          <div>
-                 <img src={Bg} alt="Image" />
-          </div>
+          <motion.div
+             initial={{ opacity: 0, y: 30 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             viewport={{ once: false, amount: 0.3 }}
+             transition={{ duration: 2, ease: "easeIn"}}
+          >
+               <img src={Bg} alt="Image" />
+          </motion.div>
              <div className='absolute bottom-35 left-60'>
-                  <h1 className='text-5xl text-white font-bold'>Support Sustainable Farming <br /> With AI Technology</h1>
-                  <p className='text-white relative top-10 text-2xl'>TeraScan AI is built to help farmers make better decisions, <br /> reduce crop loss and acheive higher yeilds.</p>
-                  <div className='relative top-20'>
+                 <motion.div>
+                    <h1 className='text-5xl text-white font-bold'>Support Sustainable Farming <br /> With AI Technology</h1>
+                    <p className='text-white relative top-10 text-2xl'>TeraScan AI is built to help farmers make better decisions, <br /> reduce crop loss and acheive higher yeilds.</p>
+                 </motion.div>
+                  <motion.div className='relative top-20'>
                     <button className="bg-emerald-400 hover:bg-emerald-500 text-black font-bold rounded-xl  py-5 px-12">Start Scanning Now</button>
-                  </div>
+                  </motion.div>
              </div>
          </div>    
     </div>
