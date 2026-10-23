@@ -61,6 +61,9 @@ const Prediction = () => {
                  <h1 className="text-center text-white font-bold text-6xl">Scan your Potato Leaf</h1>
                  <p className="text-center text-white mt-6 text-2xl">Upload  a clear image of a potato leaf to detect its diseases <br />using our AI model.</p>
                </div>
+               <div className="mt-12 flex justify-center">
+                     <input type="file" accept="/*" className="border-2 border-dotted border-white" />
+               </div>
           </div>
      </div>
   );
