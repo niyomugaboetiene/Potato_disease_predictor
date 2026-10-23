@@ -129,7 +129,10 @@ export default function HowItWorks() {
                  </motion.div>
                   <motion.div
                       className='relative top-20'
-                      
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: false, amount: 0.3 }}
+                      transition={{ duration: 2, ease: "easeInOut" }}
                    >
                     <button className="bg-emerald-400 hover:bg-emerald-500 text-black font-bold rounded-xl  py-5 px-12">Start Scanning Now</button>
                   </motion.div>
