@@ -56,7 +56,11 @@ const Prediction = () => {
 
   return (
      <div className="relative w-full min-h-screen bg-[#06131F] overflow-hidden">
-
+          <div className="mx-auto w-full max-w-7xl">
+               <div className="mt-12">
+                 <h1 className="text-center text-white ">Scan your Potato Leaf</h1>
+               </div>
+          </div>
      </div>
   );
 };
