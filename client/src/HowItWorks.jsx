@@ -3,6 +3,7 @@ import { FiArrowRight } from 'react-icons/fi';
 import LateBright from "./assets/Late_bright.jpg"
 import EaliryBright from "./assets/ealiry.jpeg"
 import Healthy from "./assets/healithy.jpg";
+import Bg from "./assets/bg.png"
 import { motion } from "framer-motion";
 
 export default function HowItWorks() {
@@ -108,7 +109,9 @@ export default function HowItWorks() {
             </motion.div>
 
             <div>
-                
+                <div>
+                  <img src={Bg} alt="Image" />
+                </div>
             </div>
         </div>      
     </div>
