@@ -127,7 +127,10 @@ export default function HowItWorks() {
                     <h1 className='text-5xl text-white font-bold'>Support Sustainable Farming <br /> With AI Technology</h1>
                     <p className='text-white relative top-10 text-2xl'>TeraScan AI is built to help farmers make better decisions, <br /> reduce crop loss and acheive higher yeilds.</p>
                  </motion.div>
-                  <motion.div className='relative top-20'>
+                  <motion.div
+                      className='relative top-20'
+                      
+                   >
                     <button className="bg-emerald-400 hover:bg-emerald-500 text-black font-bold rounded-xl  py-5 px-12">Start Scanning Now</button>
                   </motion.div>
              </div>
