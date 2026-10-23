@@ -113,12 +113,17 @@ export default function HowItWorks() {
              initial={{ opacity: 0, y: 30 }}
              whileInView={{ opacity: 1, y: 0 }}
              viewport={{ once: false, amount: 0.3 }}
-             transition={{ duration: 2, ease: "easeIn"}}
+             transition={{ duration: 2, ease: "easeInOut"}}
           >
                <img src={Bg} alt="Image" />
           </motion.div>
              <div className='absolute bottom-35 left-60'>
-                 <motion.div>
+                 <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: false, amount: 0.3 }}
+                    transition={{ duration: 1, ease: "easeInOut"}}
+                 >
                     <h1 className='text-5xl text-white font-bold'>Support Sustainable Farming <br /> With AI Technology</h1>
                     <p className='text-white relative top-10 text-2xl'>TeraScan AI is built to help farmers make better decisions, <br /> reduce crop loss and acheive higher yeilds.</p>
                  </motion.div>
