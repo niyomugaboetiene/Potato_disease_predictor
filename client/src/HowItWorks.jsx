@@ -111,8 +111,11 @@ export default function HowItWorks() {
         <div className='mt-12 max-w-400 mx-auto w-full mb-4'>
              <img src={Bg} alt="Image" />
              <div className='absolute bottom-50 left-60'>
-              <h1 className='text-5xl text-white font-bold'>Support Sustainable Farming <br /> With AI Technology</h1>
-              <p className='text-white mt-6 text-2xl'>TeraScan AI is built to help farmers make better decisions, <br /> reduce crop loss and acheive higher yeilds.</p>
+                  <h1 className='text-5xl text-white font-bold'>Support Sustainable Farming <br /> With AI Technology</h1>
+                  <p className='text-white mt-6 text-2xl'>TeraScan AI is built to help farmers make better decisions, <br /> reduce crop loss and acheive higher yeilds.</p>
+                  <div className='relative top-20'>
+                    <button className="bg-emerald-400 hover:bg-emerald-500 text-white font-bold rounded-lg  py-5 px-12">Start Scanning Now</button>
+                  </div>
              </div>
          </div>    
     </div>
